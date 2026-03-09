@@ -81,6 +81,10 @@
         padding: 0 6px 18px;
       }
 
+      .tree > .level{
+       margin-top: 4px;
+       margin-bottom: 10px;}
+
       /* Expand/collapse using <details> */
       details {
         border-radius: 12px;
@@ -415,7 +419,7 @@
         <div class="hint">Tip: Expand a section, then click a resource to load it on the right.</div>
 
         <nav class="tree" aria-label="Resource navigation">
-          <!-- HOME LINK (added above Clinical Reference) -->
+          <!-- HOME LINK -->
           <a class="navlink" href="#" id="homeLink" data-title="Home">
             <span class="file" aria-hidden="true">📄</span>
             Home
@@ -489,7 +493,7 @@
             </div>
           </details>
 
-            <details open>
+          <details open>
             <summary>
               <span class="twisty" aria-hidden="true">▸</span>
               <span class="node-title">Other</span>
@@ -557,17 +561,6 @@
                 </ul>
               </div>
             </div>
-
-            <div class="home-foot">
-              <div>
-                <strong>Copyright:</strong>
-                © 2027
-                Human Kinetics Inc. All rights reserved.
-              </div>
-              <div style="margin-top: 6px">If you reuse or distribute this guide, include attribution and do not remove copyright notices.</div>
-            </div>
-          </div>
-
           <iframe name="contentFrame" id="contentFrame" title="Resource Viewer" scrolling="yes"></iframe>
         </div>
       </main>
