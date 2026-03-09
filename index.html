@@ -81,9 +81,10 @@
         padding: 0 6px 18px;
       }
 
-      .tree > .level{
-       margin-top: 4px;
-       margin-bottom: 10px;}
+      .tree > .level {
+        margin-top: 4px;
+        margin-bottom: 10px;
+      }
 
       /* Expand/collapse using <details> */
       details {
@@ -394,6 +395,24 @@
         font-size: 12px;
         line-height: 1.45;
       }
+      .copyright-btn {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, rgba(42, 77, 122, 0.95), rgba(42, 77, 122, 0.8));
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: all 0.15s ease;
+      }
+
+      .copyright-btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(135deg, rgba(42, 77, 122, 1), rgba(42, 77, 122, 0.9));
+      }
 
       @media (max-width: 900px) {
         .home-grid {
@@ -561,6 +580,13 @@
                 </ul>
               </div>
             </div>
+
+            <div class="home-foot">
+              <div style="margin-bottom: 8px; font-weight: 600"></div>
+              <a href="resources/copyright.docx" target="_blank" download class="copyright-btn">View Copyright Document</a>
+            </div>
+          </div>
+
           <iframe name="contentFrame" id="contentFrame" title="Resource Viewer" scrolling="yes"></iframe>
         </div>
       </main>
