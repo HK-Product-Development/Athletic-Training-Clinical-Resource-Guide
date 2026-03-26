@@ -534,7 +534,7 @@
         <div class="topbar">
           <div class="left">
             <div class="title" id="pageTitle">Home</div>
-            <div class="subtitle" id="pageSubtitle">About this resource.</div>
+            <div class="subtitle" id="pageSubtitle"></div>
           </div>
 
           <div class="right">
@@ -557,7 +557,7 @@
 
             <div class="home-grid">
               <div class="home-card">
-                <h3>About this resources</h3>
+                <h3>About this resource</h3>
                 <p>
                   This guide consolidates frequently used athletic training reference tables and quick tools for day-to-day clinical practice. Use the navigation on the left to open resources in the
                   viewer.
@@ -625,7 +625,7 @@
           if (homeLink) homeLink.classList.add("active");
 
           if (pageTitle) pageTitle.textContent = "Home";
-          if (pageSubtitle) pageSubtitle.textContent = "About this resource guide.";
+          if (pageSubtitle) pageSubtitle.textContent = "";
 
           if (frame) frame.removeAttribute("src");
           if (homePage) homePage.style.display = "block";
