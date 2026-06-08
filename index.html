@@ -452,25 +452,21 @@
 
             <div class="level">
               <div class="links">
-                <a class="navlink" href="resources/normal-vitals.html" target="contentFrame" data-title="Clinical Reference • Normal vitals" id="defaultLink">
-                  <span class="file" aria-hidden="true">📄</span>
-                  Normal vitals
-                </a>
                 <a class="navlink" href="resources/gcs.html" target="contentFrame" data-title="Clinical Reference • Glasgow Coma Scale">
                   <span class="file" aria-hidden="true">📄</span>
                   Glasgow Coma Scale (GCS)
                 </a>
-                <a class="navlink" href="resources/reflexes.html" target="contentFrame" data-title="Clinical Reference • Reflex grading">
+                <a class="navlink" href="resources/reflexes.html" target="contentFrame" data-title="Clinical Reference • Reflex Grading Scale">
                   <span class="file" aria-hidden="true">📄</span>
-                  Reflex grading
+                  Reflex Grading Scale
                 </a>
-                <a class="navlink" href="resources/myotomes-dermatomes.html" target="contentFrame" data-title="Clinical Reference • Myotomes &amp; dermatomes">
+                <a class="navlink" href="resources/myotomes-dermatomes.html" target="contentFrame" data-title="Clinical Reference • Myotomes &amp; Dermatomes">
                   <span class="file" aria-hidden="true">📄</span>
-                  Myotomes &amp; dermatomes
+                  Myotomes &amp; Dermatomes
                 </a>
-                <a class="navlink" href="resources/blood-labs.html" target="contentFrame" data-title="Clinical Reference • Blood lab tests">
+                <a class="navlink" href="resources/blood-labs.html" target="contentFrame" data-title="Clinical Reference • Blood Lab Tests">
                   <span class="file" aria-hidden="true">📄</span>
-                  Blood lab tests
+                  Blood Lab Tests
                 </a>
               </div>
             </div>
@@ -486,7 +482,7 @@
               <div class="links">
                 <a class="navlink" href="resources/med-classes.html" target="contentFrame" data-title="Medications • Common medication classes">
                   <span class="file" aria-hidden="true">📄</span>
-                  Common medication classes
+                  Common Medication Classes
                 </a>
               </div>
             </div>
@@ -568,7 +564,6 @@
               <div class="home-card">
                 <h3>What you’ll find</h3>
                 <ul>
-                  <li>Normal vitals reference ranges</li>
                   <li>Glasgow Coma Scale (GCS)</li>
                   <li>Reflex grading</li>
                   <li>Myotomes &amp; dermatomes</li>
@@ -583,7 +578,7 @@
 
             <div class="home-foot">
               <div style="margin-bottom: 8px; font-weight: 600"></div>
-              <a href="resources/copyright.docx" target="_blank" download class="copyright-btn">View Copyright Document</a>
+              <a href="resources/ATCR Copyright Page.docx" target="_blank" download class="copyright-btn">View Copyright Document</a>
             </div>
           </div>
 
@@ -617,7 +612,7 @@
           links.forEach((a) => a.classList.toggle("active", a === link));
           const title = link.getAttribute("data-title") || link.textContent.trim();
           if (pageTitle) pageTitle.textContent = title;
-          if (pageSubtitle) pageSubtitle.textContent = "Loaded in the viewer on the right.";
+          if (pageSubtitle) pageSubtitle.textContent = "";
         }
 
         function showHome() {
